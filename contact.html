@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Monopoly Enterprise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Material Icons for Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navigation Bar */
+        .nav-wrapper {
+            background-color: #b71c1c;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Main Content */
+        .container {
+            padding: 40px 20px;
+        }
+
+        /* Form Styling */
+        .input-field input[type=text],
+        .input-field input[type=email],
+        .input-field textarea {
+            border-bottom: 1px solid #b71c1c;
+        }
+        .input-field input[type=text]:focus,
+        .input-field input[type=email]:focus,
+        .input-field textarea:focus {
+            border-bottom: 1px solid #d32f2f;
+            box-shadow: 0 1px 0 0 #d32f2f;
+        }
+        .input-field label {
+            color: #b71c1c;
+        }
+        .input-field label.active {
+            color: #d32f2f;
+        }
+
+        /* Submit Button Styling */
+        .btn-large {
+            background: linear-gradient(45deg, #d32f2f, #b71c1c);
+            border-radius: 50px;
+            padding: 12px 35px;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0px 4px 10px rgba(211, 47, 47, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: white;
+        }
+        .btn-large:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(211, 47, 47, 0.8);
+        }
+
+        /* Social Media Icons */
+        .social-icons a {
+            color: #b71c1c;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #d32f2f;
+        }
+
+        /* Map Section */
+        .map-container {
+            margin-top: 40px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #b71c1c;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Monopoly Enterprise</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <h1 class="center-align">Contact Us</h1>
+        <p class="center-align">We'd love to hear from you! Please fill out the form below or reach us through our social media channels.</p>
+        <div class="row">
+            <form class="col s12 m8 offset-m2">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="name" type="text" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email" type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col s12 center-align" style="margin-top: 20px;">
+                        <button class="btn-large waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="center-align" style="margin-top: 40px;">
+            <h5>Connect with us</h5>
+            <div class="social-icons">
+                <a href="#"><i class="material-icons">facebook</i></a>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-container center-align">
+            <h5>Our Location</h5>
+            <!-- Placeholder for Google Maps Embed -->
+            <div class="map-container" style="margin-top: 20px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2849.2253261340043!2d26.130931076036166!3d44.42853997107597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sro!4v1730880437935!5m2!1sen!2sro" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Monopoly Enterprise - All Rights Reserved</p>
+        <p>MONOPOLY ENTERPRISE S.R.L.</p>
+        <p>Registered Office: Bucuresti Sectorul 3, Bulevardul Decebal, Nr.12, CAMERA 1, Bloc S7, Scara 1, Etaj 5, Ap. 15</p>
+        <p>Phone: +40753374497 | Email: programmingshortcuts@gmail.com</p>
+    </footer>
+
+
+    <!-- Materialize JS and Initialization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Form Validation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.updateTextFields(); // Initialize Materialize labels
+        });
+
+        // Form submission handler (for demonstration purposes)
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            M.toast({html: 'Thank you for contacting us!', classes: 'rounded'}); // Show a toast message
+            form.reset(); // Reset the form fields
+        });
+    </script>
+</body>
+</html>
